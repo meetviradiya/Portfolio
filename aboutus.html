@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d705327729.js" crossorigin="anonymous"></script>
+
+    <style>
+        .about-me {
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-heading {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--text-color);
+            font-weight: bold;
+        }
+
+        .about-intro {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #7d7d7d;
+            margin-bottom: 30px;
+        }
+
+        .about-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .about-bio,
+        .about-skills {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-bio h3,
+        .about-skills h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+        }
+
+        .about-skills ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .about-skills li {
+            margin: 5px 0;
+            font-size: 1.1rem;
+            transition: transform 0.3s;
+        }
+
+        .about-skills li:hover {
+            transform: scale(1.05);
+        }
+
+        .about-contact {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .about-contact h3 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+        }
+
+        .about-contact a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .about-contact a:hover {
+            text-decoration: underline;
+            color: #007bff;
+        }
+
+        /* Profile image styling */
+        .profile-photo {
+            display: block;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+            border: 4px solid white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (min-width: 576px) {
+
+            .container,
+            .container-sm {
+                max-width: 700px;
+            }
+        }
+
+        .about-bio {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="./index.html">
+            <div class="logo"><img src="./img/mv-high-resolution-logo-black-transparent.png" width="100"></div>
+        </a>
+        <div class="menu-icon" id="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About</a></li>
+            <li><a href="other.html">My Work</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <header class="masthead-aboutus">
+            <div class="container">
+                <div class="masthead-heading-aboutus text-uppercase">About Me</div>
+            </div>
+        </header>
+    </section>
+
+    <section class="about-me">
+        <div class="container">
+            <h2 class="about-heading">Hello, I'm Meet Viradiya</h2>
+            <p class="about-intro">A passionate web developer and designer dedicated to crafting beautiful and
+                functional digital experiences.</p>
+
+            <div class="about-content">
+                <div class="about-bio">
+                    <!-- Profile photo added here -->
+                    <img src="./img/WhatsApp Image 2024-09-12 at 12.09.07_335f7698.jpg" alt="Profile Photo"
+                        class="profile-photo">
+
+                    
+                    <h3>My Journey</h3>
+                    <p>From my early fascination with technology to becoming a skilled web developer, my journey has
+                        been filled with learning, creativity, and growth. I started coding at a young age, building my
+                        first website just for fun. What began as a hobby quickly turned into a full-fledged career as I
+                        discovered my love for design and problem-solving.</p>
+                    <p>With a focus on clean, user-friendly designs, I aim to deliver websites that not only look great
+                        but also provide an intuitive experience. Every project is a new adventure, and I’m excited to
+                        tackle challenges that come my way.</p>
+                </div>
+
+                <div class="about-skills">
+                    <h3>Skills & Expertise</h3>
+                    <ul>
+                        <li>HTML5, CSS3, JavaScript</li>
+                        <li>Responsive Web Design</li>
+                        <li>React & Angular Frameworks</li>
+                        <li>UI/UX Design Principles</li>
+                        <li>SEO Best Practices</li>
+                    </ul>
+                    <h3>My Resume</h3>
+                    <p> <iframe src="./document/MEET_VIRADIYA_Resume (5).pdf" width="100%" height="500px"></iframe>
+                         <a href="./document/MEET_VIRADIYA_Resume (5).pdf" class="cta-button-resume" target="_blank">Download PDF</a>
+                   
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="about-contact">
+                <h3>Let's Connect!</h3>
+                <p>If you're looking for someone to bring your ideas to life, I’d love to hear from you! Feel free to
+                    reach out through my <a href="./contactus.html">contact page</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-icon').addEventListener('click', () => {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

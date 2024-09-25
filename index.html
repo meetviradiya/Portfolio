@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d705327729.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="./index.html"><div class="logo"><img src="./img/mv-high-resolution-logo-black-transparent.png" width="100"></div></a>
+        <div class="menu-icon" id="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About</a></li>
+            <li><a href="other.html">My Work</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header class="masthead">
+        <div class="container">
+            <div class="overlay"></div>
+            <h1 class="masthead-heading text-uppercase">Innovate Something New with Us</h1>
+             <!-- Button added here -->
+             <a href="./aboutus.html" class="cta-button">Get Started</a>
+        </div>
+    </header>
+    <!-- <section>
+        <h1>About us</h1>
+        <section class="info-section">
+            <div class="parent">
+                <div class="child-1">
+                    <h4 class="text">"Crafting modern, responsive websites tailored to your needs. We combine innovative
+                        design with powerful functionality to deliver seamless user experiences."</h4>
+                    <h5>Our Expertise</h5>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <h5>Why Choose Us?</h5>
+                    <ol>
+                        <li>Highly professional team</li>
+                        <li>On-time delivery</li>
+                        <li>Flexible work schedule</li>
+                        <li>24/7 Support</li>
+                    </ol>
+                </div>
+                <div class="child-2">
+                    <img src="./img/aaa76d7d-31eb-47d8-9b80-3d46c9772468.webp" alt="Responsive Website Design">
+                </div>
+            </div>
+        </section>
+    </section> -->
+    <!-- <section class="about-section">
+        <div class="container">
+            <h1>About Me</h1>
+            <div class="content-wrapper">
+                <div class="bio">
+                    <p class="intro-text">"Hi, I’m [Your Name], a passionate web developer specializing in crafting modern, responsive websites that combine innovative design with seamless functionality. My goal is to turn your ideas into reality and deliver exceptional user experiences."</p>
+                    <h5>My Expertise</h5>
+                    <ul class="skills-list">
+                        <li>HTML & CSS</li>
+                        <li>JavaScript & jQuery</li>
+                        <li>React.js & Vue.js</li>
+                        <li>Responsive Web Design</li>
+                    </ul>
+                    <h5>Why Work with Me?</h5>
+                    <ol class="reasons-list">
+                        <li>Proven Track Record of Successful Projects</li>
+                        <li>Attention to Detail and Design Quality</li>
+                        <li>Flexible Work Schedule</li>
+                        <li>Strong Communication Skills</li>
+                    </ol>
+                </div>
+                <div class="profile-img">
+                    <img src="./img/WhatsApp Image 2024-09-12 at 12.09.07_335f7698.jpg" alt="Profile Photo">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <script>
+        // Adjust masthead height based on navbar height
+        function adjustMastheadHeight() {
+            const navbarHeight = document.querySelector('.navbar').offsetHeight;
+            document.getElementById('masthead').style.height = `calc(100vh - ${navbarHeight}px)`;
+        }
+
+        // Adjust masthead height on page load and window resize
+        window.addEventListener('load', adjustMastheadHeight);
+        window.addEventListener('resize', adjustMastheadHeight);
+
+        // Mobile menu toggle
+        document.getElementById('menu-icon').addEventListener('click', () => {
+            document.getElementById('nav-links').classList.toggle('active');
+
+            // Recalculate masthead height when mobile menu is toggled (in case navbar height changes)
+            adjustMastheadHeight();
+        });
+
+    </script>
+</body>
+
+</html>
