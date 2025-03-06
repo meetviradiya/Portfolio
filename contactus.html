@@ -9,73 +9,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/d705327729.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     <style>
-
-        .contact-me {
-            padding: 60px 20px;
-            background-color: #f9f9f9;
-        }
-
-        .contact-heading {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: var(--text-color);
-        }
-
-        .contact-intro {
-            text-align: center;
-            font-size: 1.2rem;
-            color: #7d7d7d;
-            margin-bottom: 40px;
-        }
-
-        .contact-card {
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
-        }
-
-        .contact-card h3 {
-            margin-bottom: 20px;
-            color: var(--primary-color);
-        }
-
-        .contact-info p {
-            font-size: 1.1rem;
-            margin: 5px 0;
-        }
-
-        .contact-form .form-group {
-            margin-bottom: 15px;
-        }
-
-        .contact-form .form-control {
-            border-radius: 5px;
-        }
-
-        .contact-form button {
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px;
-        }
-
-        .contact-form button:hover {
-            background-color: var(--accent-color);
-        }
-
+ 
     </style>
 </head>
 
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <a href="./index.html"><div class="logo"><img src="./img/mv-high-resolution-logo-black-transparent.png" width="100"></div></a>
+        <a href="./index.html">
+            <div class="logo"><img src="./img/mv-high-resolution-logo-black-transparent.png" width="100" alt="Logo"></div>
+        </a>
         <div class="menu-icon" id="menu-icon">
             <div class="line"></div>
             <div class="line"></div>
@@ -100,19 +46,21 @@
     <section class="contact-me">
         <div class="container">
             <h2 class="contact-heading">Get in Touch</h2>
-            <p class="contact-intro">I would love to hear from you! Please fill out the form below to get in touch.</p>
+            <p class="contact-intro">
+                The contact form is currently under development. In the meantime, please reach out via email for any inquiries or communication.
+            </p>
 
             <div class="contact-card">
                 <h3>Contact Information</h3>
                 <div class="contact-info">
                     <p><strong>Email:</strong> <a href="mailto:meetviradiya4523@gmail.com" style="text-decoration: none;">meetviradiya4523@gmail.com</a></p>
-                    <p><strong>Phone:</strong> <a href="tel: +919727443804" style="text-decoration: none;">9727443804</a></p>
+                    <p><strong>Phone:</strong> <a href="tel:+919727443804" style="text-decoration: none;">Tap Here</a></p>
                 </div>
             </div>
 
-            <div class="contact-card contact-form">
+            <div class="contact-card contact-form">                     
                 <h3>Contact Form</h3>
-                <form action="#" method="POST">
+                <form action="form.php" method="POST">
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" class="form-control" id="name" name="name" required>
@@ -131,13 +79,7 @@
         </div>
     </section>
 
-    <script>
-        // Mobile menu toggle
-        document.getElementById('menu-icon').addEventListener('click', () => {
-            const navLinks = document.getElementById('nav-links');
-            navLinks.classList.toggle('active');
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
